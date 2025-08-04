@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import API from "../api";
 
 const Register = () => {
@@ -32,7 +32,7 @@ const Register = () => {
         <br />
         <button className="btn">Register</button>
         <br /><br />
-        <a href="/login">Already have a account? Login</a>
+        <Link to="/login">Already have a account? Login</Link>
       </form>
     </div>
   );
